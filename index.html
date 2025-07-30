@@ -103,10 +103,8 @@ async def custom_site():
 
     main = appdir / "assets" / "main.py"
     
-    platform.window.platform.window.MM.UME = true  # "retirer pour désactiver l'autorun"
-    
     # test/wait user media interaction
-    if not platform.window.MM.UME:
+    if not platform.window.MM.UME and False:  # Retirer False pour activer désactiver autorun
 
         # now that apk is mounted we have access to font cache
         # but we need to fill __file__ that is not yet set
