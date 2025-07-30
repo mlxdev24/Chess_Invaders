@@ -102,7 +102,9 @@ async def custom_site():
         await asyncio.sleep(.1)
 
     main = appdir / "assets" / "main.py"
-
+    
+    platform.window.platform.window.MM.UME = true  # "retirer pour désactiver l'autorun"
+    
     # test/wait user media interaction
     if not platform.window.MM.UME:
 
@@ -191,7 +193,7 @@ config = {
     archive : "chess_invader",
     gui_debug : 3,
     cdn : "https://pygame-web.github.io/pygbag/0.0/",
-    autorun : 1,
+    autorun : 0,
     PYBUILD : "3.12"
 }
 
